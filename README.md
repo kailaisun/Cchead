@@ -5,6 +5,8 @@ Code for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Info
 
 
 Dataset Download: https://cloud.tsinghua.edu.cn/d/a9f2703b83a54dc7b569/
+
+
 Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing
 
 ## Environment
@@ -12,6 +14,8 @@ Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2
 
 
 ## Installation
+
+Please refer to [Installation](https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing) for installation instructions.
  1. Install pytorch
 
   ```bash
@@ -44,3 +48,7 @@ python people_detect.py --path <video_path>
 ```python 
  result_info = joint_de(head_info, other_info,thresh=0.8,conf=0.6,thresh1=0.8)  #line 50
 ```
+
+
+## Acknowledgement
+MMDetection is an open source project that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks. We wish that the toolbox and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new detectors.

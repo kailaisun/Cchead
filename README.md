@@ -15,7 +15,7 @@ This filefolder contains what we directly applied in our methods.
 
 It form the dataset as:
 
---balanced_data
+  --balanced_data
        --images
           --train
              --90T_25fps

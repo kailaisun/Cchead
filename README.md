@@ -9,44 +9,95 @@ Dataset Download: https://cloud.tsinghua.edu.cn/d/a9f2703b83a54dc7b569/
 
 Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing
 
+We uploaded both raw videos and filefolder of images and labels. If you want to replicate our experiment, you should unzip the 4 zipfiles into <yourpathtopaddledet/dataset/mot/>.
+
+This filefolder contains what we directly applied in our methods.
+
+It form the dataset as:
+
+--balanced_data
+       --images
+          --train
+             --90T_25fps
+                --img
+                    --0.jpg
+                    --1.jpg
+                    ......
+                --seqinfo.ini
+             ......
+
+         --test
+            --90cross_25fps
+               --img
+                  --0.txt
+                  --1.txt
+                --gt
+                   --gt.txt
+                --seqinfo.ini
+             ......
+
+
+      --labels_with_ids
+         --train
+            --90T_25fps
+               --img
+                  --0.txt
+                  --1.txt
+                  ......
+
+         --test
+            --90cross_25fps
+               --img
+                  --0.txt
+                  --1.txt
+                  ......
+
+where gt.txt is used for evaluation, it is formed as:
+1,1,57,86,28,32,1,1,1  (frame_id, track_id, xy (left&up) wh,...)
+2,1,55,87,28,32,1,1,1
+3,1,60,85,28,32,1,1,1
+4,1,63,85,29,31,1,1,1
+5,1,64,85,29,31,1,1,1
+6,1,66,83,29,31,1,1,1
+...
+1,2,65,146,50,56,1,1,1 (frame_id, track_id, xy (left&up) wh,...)
+
+label files for training such as 0.txt is formed as:
+0 186 0.23671875 0.25069444444444444 0.0067708333333333336 0.015277777777777777 (class_ind, track_id, xy (center) wh)
+.......
+xywhs in label files are all scaled to (0,1)
+
+seqinfo.ini contains the following information:
+
+[Sequence]
+name=90T_25fps
+imDir=img
+frameRate=25
+seqLength=1110
+imWidth=1920
+imHeight=1080
+imExt=.jpg
+
+If you are using paddledetection, you may modify codes of loading data to train network on this dataset.
+
 ## Environment
-- The code is tested on Ubuntu 20.04.2, python 3.8, cuda 11.1.
+- The code is tested on Ubuntu 20.04.2, python 3.9, cuda 11.7，Paddle 2.4.2, PaddleDet 2.6.
 
 
 ## Installation
 
-Please refer to [Installation](https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing) for installation instructions.
- 1. Install pytorch
+Please refer to [Installation]((https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.6/docs/tutorials/INSTALL_cn.md) for installation instructions of Paddle and PaddleDet.
 
-  ```bash
-  pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
-  ```
-
- 2. Clone this repository
-  ```bash
-  git clone https://github.com/kailaisun/FFO
-  ```
-  
- 3. Install 
-  ```bash
-  pip install -r requirements.txt
-  ```
+We modified some codes in PaddleDet, please clone them and replace the original code in PaddleDet.
   
 ## Train
 ```Bash
-python people_detect.py --path <video_path>
-```
+python -m paddle.distributed.launch --log_dir=./fairmot_dla34_40e_1088x608_mifn/ --gpus 0,1,2,3 tools/train.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml```
 
 ## Test
 
 ```Bash
-python people_detect.py --path <video_path>
-```
-- Result of SCM
-
-- You can modify hyperparameters of JointDet module in person_detect.py.
-```python 
- result_info = joint_de(head_info, other_info,thresh=0.8,conf=0.6,thresh1=0.8)  #line 50
+CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml -o weights=output/fairmot_ourdata_dla34_40e_1088x608_mifn/model_final.pdparams
 ```
 
 

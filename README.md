@@ -1,4 +1,4 @@
-# cchead
+# Cchead
 
 
 Code for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network

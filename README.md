@@ -106,6 +106,7 @@ We modified some codes in PaddleDet, please clone them and replace the original 
 ## Train
 ```Bash
 python -m paddle.distributed.launch --log_dir=./fairmot_dla34_40e_1088x608_mifn/ --gpus 0,1,2,3 tools/train.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml```
+```
 
 ## Test
 

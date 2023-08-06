@@ -11,8 +11,7 @@ Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2
 ![v1-2](https://github.com/kailaisun/cchead/assets/40592892/a8aca41d-ba97-4204-b8e0-778417345c65)
 
 
-# Dataset Usage
-Dataset Download: will be open after review.
+# Cchead Dataset Usage
 
 <!---
 https://cloud.tsinghua.edu.cn/d/a9f2703b83a54dc7b569/
@@ -113,6 +112,9 @@ python -m paddle.distributed.launch --log_dir=./fairmot_dla34_40e_1088x608_mifn/
 ```Bash
 CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml -o weights=output/fairmot_ourdata_dla34_40e_1088x608_mifn/model_final.pdparams
 ```
+
+## Dataset Download
+Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review.
 
 
 ## Acknowledgement

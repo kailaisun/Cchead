@@ -5,8 +5,10 @@ Code for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Info
 
 Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing
 
+![v2-2](https://github.com/kailaisun/cchead/assets/40592892/9d8f0fef-4652-4869-8004-2748ebcbb706)
 
-[https://drive.google.com/drive/u/1/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ](https://github.com/kailaisun/cchead/assets/40592892/a49304ed-5a50-4787-b3c5-d6de9683d072)
+
+![v1-2](https://github.com/kailaisun/cchead/assets/40592892/a8aca41d-ba97-4204-b8e0-778417345c65)
 
 
 # Dataset Usage

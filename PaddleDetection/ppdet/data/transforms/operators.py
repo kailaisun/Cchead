@@ -165,11 +165,11 @@ def _make_dirs(dirname):
 
 
 @register_op
-class Decode_ms(BaseOperator):
+class decode_mifn(BaseOperator):
     def __init__(self):
         """ Transform the image data to numpy format following the rgb format
         """
-        super(Decode_ms, self).__init__()
+        super(decode_mifn, self).__init__()
 
     def apply(self, sample, context=None):
         """ load image if 'im_file' field is not empty but 'image' is"""

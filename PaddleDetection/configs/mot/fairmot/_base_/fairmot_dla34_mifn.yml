@@ -1,22 +1,22 @@
-architecture: FairMOT_ms
+architecture: FairMOT_mifn
 pretrain_weights: https://paddledet.bj.bcebos.com/models/pretrained/fairmot_dla34_crowdhuman_pretrained.pdparams
 for_mot: True
 snapshot_epoch: 5
 
 
-FairMOT_ms:
-  detector: CenterNet_ms
+FairMOT_mifn:
+  detector: CenterNet_mifn
   reid: FairMOTEmbeddingHead
   loss: FairMOTLoss
   tracker: JDETracker
 
-CenterNet_ms:
-  backbone: DLA_ms
-  neck: CenterNetDLAFPN_ms
+CenterNet_mifn:
+  backbone: DLA_mifn
+  neck: CenterNetDLAFPN_mifn
   head: CenterNetHead
   post_process: CenterNetPostProcess
 
-CenterNetDLAFPN_ms:
+CenterNetDLAFPN_mifn:
   down_ratio: 4
   last_level: 5
   out_channel: 0

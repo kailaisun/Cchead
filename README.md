@@ -111,7 +111,7 @@ python -m paddle.distributed.launch --log_dir=./fairmot_dla34_ourdata_30e_1088x6
 ## Test
 
 ```Bash
-CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml -o weights=<path to weights>
+CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_30e_1088x608_mifn.yml -o weights=<path to weights>
 ```
 
 ## Dataset Download

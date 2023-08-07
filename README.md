@@ -30,8 +30,8 @@ It form the dataset as:
          --train
             --90cross_25fps
                --img
-                  --0.txt
-                  --1.txt
+                  --0.jpg
+                  --1.jpg
                 --gt
                    --gt.txt
                 --seqinfo.ini
@@ -40,8 +40,8 @@ It form the dataset as:
          --test
             --90cross_25fps
                --img
-                  --0.txt
-                  --1.txt
+                  --0.jpg
+                  --1.jpg
                 --gt
                    --gt.txt
                 --seqinfo.ini

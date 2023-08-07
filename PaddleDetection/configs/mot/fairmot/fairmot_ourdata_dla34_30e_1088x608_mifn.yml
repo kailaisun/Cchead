@@ -1,5 +1,5 @@
 _BASE_: [
-  '../../datasets/total_mot_ba.yml',
+  '../../datasets/cchead.yml',
   '../../runtime.yml',
   '_base_/optimizer_30e_momentum.yml',
   '_base_/fairmot_dla34_mifn.yml',

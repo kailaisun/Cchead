@@ -115,7 +115,7 @@ CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_o
 ```
 
 ## Dataset Download
-Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review.
+Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review. We will also release our trained Fairmot-mifn weights.
 
 
 ## Acknowledgement

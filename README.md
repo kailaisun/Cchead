@@ -99,19 +99,19 @@ If you are using paddledetection, you may modify codes of loading data to train 
 
 ## Installation
 
-Please refer to [Installation]((https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.6/docs/tutorials/INSTALL_cn.md) for installation instructions of Paddle and PaddleDet.
+Please refer to [Installation]((https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.6/docs/tutorials/INSTALL_cn.md) for installation instructions of Paddle and PaddleDet. It is recommanded to install PaddleDet with pip3.
 
 We modified some codes in PaddleDet, please clone them and replace the original code in PaddleDet.
   
 ## Train
 ```Bash
-python -m paddle.distributed.launch --log_dir=./fairmot_dla34_40e_1088x608_mifn/ --gpus 0,1,2,3 tools/train.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml```
+python -m paddle.distributed.launch --log_dir=./fairmot_dla34_ourdata_30e_1088x608_mifn/ --gpus 0,1,2,3 tools/train.py -c configs/mot/fairmot/fairmot_ourdata_dla34_30e_1088x608_mifn.yml```
 ```
 
 ## Test
 
 ```Bash
-CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml -o weights=output/fairmot_ourdata_dla34_40e_1088x608_mifn/model_final.pdparams
+CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_40e_1088x608_mifn.yml -o weights=<path to weights>
 ```
 
 ## Dataset Download

@@ -9,6 +9,11 @@ Dataset Download: will be open soon. We have submitted our Cchead dataset to Jou
 ## Demo show
 Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing
 
+![image](https://github.com/kailaisun/Cchead/show/v1-1.png)
+
+
+![image](https://github.com/kailaisun/Cchead/show/v2-1.png)
+
 
 ![v1-1](https://github.com/kailaisun/Cchead/assets/40592892/1d6f4b9d-d620-47f6-9bee-4921788fc674)
 

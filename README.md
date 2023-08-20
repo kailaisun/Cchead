@@ -3,12 +3,17 @@
 
 Code for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network
 
+## Dataset Download
+Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review. We will also release our trained Fairmot-mifn weights.
+
+## Demo show
 Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing
 
-![v2-2](https://github.com/kailaisun/cchead/assets/40592892/9d8f0fef-4652-4869-8004-2748ebcbb706)
+
+![v1-1](https://github.com/kailaisun/Cchead/assets/40592892/1d6f4b9d-d620-47f6-9bee-4921788fc674)
 
 
-![v1-2](https://github.com/kailaisun/cchead/assets/40592892/a8aca41d-ba97-4204-b8e0-778417345c65)
+![v2-1](https://github.com/kailaisun/Cchead/assets/40592892/5308ccf2-fc70-430d-9293-ac58ef3e5b45)
 
 
 # Cchead Dataset Usage
@@ -114,8 +119,7 @@ python -m paddle.distributed.launch --log_dir=./fairmot_dla34_ourdata_30e_1088x6
 CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_30e_1088x608_mifn.yml -o weights=<path to weights>
 ```
 
-## Dataset Download
-Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review. We will also release our trained Fairmot-mifn weights.
+
 
 
 ## Acknowledgement

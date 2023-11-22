@@ -1,7 +1,10 @@
 # Cchead
 
 
-Code for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network
+Code and Dataset for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network
+
+## Before the begin
+Cchead is an open dataset that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks. We wish that the dataset and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new detectors.
 
 ## Dataset Download
 Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review. We will also release our trained Fairmot-mifn weights.
@@ -123,6 +126,6 @@ CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_o
 
 
 ## Acknowledgement
-Cchead is an open dataset that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks. We wish that the dataset and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new detectors.
+
 
 This work was sponsored by grants from National Science Foundation of China (Grant No. 52172308), Department of Transport of Hubei Province (Contract No. 2022- 11-4-4), National Natural Science Foundation of China under Grant No. 62192751 and the 111 International Collaboration Program of China under Grant No. BP2018006.

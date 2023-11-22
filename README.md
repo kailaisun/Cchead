@@ -4,9 +4,16 @@
 Code and Dataset for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network
 
 ## Before the begin
+
 Cchead is an open dataset that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks. We wish that the dataset and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new detectors.
 
+## What we do
+We present a Chinese Large-scale Cross-scene Pedestrian Head Tracking dataset (Cchead) and a Multi-Source Information Fusion Network (MIFN). Our dataset has features that are of considerable interest, including 10 diverse scenes of 50,528 frames with over 2,366,249 heads and 2,358 tracks annotated manually. 
+
 ## Dataset Download
+
+
+
 Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review. We will also release our trained Fairmot-mifn weights.
 
 ## Demo show

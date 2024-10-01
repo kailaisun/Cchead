@@ -3,8 +3,8 @@
 
 Code and Dataset for paper: [Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network](https://arxiv.org/abs/2408.05877)
 
- <img src="show1.jpg" width="100%">
-<img src="mifn1.png" width="100%">
+ <img src="show/show1.jpg" width="100%">
+<img src="show/mifn1.png" width="100%">
  
 ## Before the begin
 

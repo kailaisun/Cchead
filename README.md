@@ -1,8 +1,11 @@
 # Cchead
 
 
-Code and Dataset for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network
+Code and Dataset for paper: [Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network](https://arxiv.org/abs/2408.05877)
 
+ <img src="show1.jpg" width="100%">
+<img src="mifn1.png" width="100%">
+ 
 ## Before the begin
 
 Cchead is an open dataset that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks. We wish that the dataset and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new detectors.
@@ -129,10 +132,26 @@ python -m paddle.distributed.launch --log_dir=./fairmot_dla34_ourdata_30e_1088x6
 CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_ourdata_dla34_30e_1088x608_mifn.yml -o weights=<path to weights>
 ```
 
+## Citation
 
+```
+@article{sun2024toward,
+         title = {Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network},
+         author = {Sun, Kailai and Wang, Xinwei and Liu, Shaobo and Zhao, Qianchuan and Huang, Gao and Liu, Chang},
+         journal={arXiv preprint arXiv:2408.05877},
+         year = {2024}.         
+}
+```
+
+## License
+
+The repository is licensed under the [Apache 2.0 license](LICENSE).
+
+## Contact Us
+
+If you have other questions❓, please contact us in time 👬
 
 
 ## Acknowledgement
-
 
 This work was sponsored by grants from National Science Foundation of China (Grant No. 52172308), Department of Transport of Hubei Province (Contract No. 2022- 11-4-4), National Natural Science Foundation of China under Grant No. 62192751 and the 111 International Collaboration Program of China under Grant No. BP2018006.

@@ -8,7 +8,7 @@ Code and Dataset for paper: [Toward Pedestrian Head Tracking: A Benchmark Datase
  
 ## Before the begin
 
-Cchead is an open dataset that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks. We wish that the dataset and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new detectors.
+Cchead is an open dataset that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features. We wish that the dataset and benchmark could serve the growing research community.
 
 ## What we do
 We present a Chinese Large-scale Cross-scene Pedestrian Head Tracking dataset (Cchead) and a Multi-Source Information Fusion Network (MIFN). Our dataset has features that are of considerable interest, including 10 diverse scenes of 50,528 frames with over 2,366,249 heads and 2,358 tracks annotated manually. 
@@ -17,7 +17,7 @@ We present a Chinese Large-scale Cross-scene Pedestrian Head Tracking dataset (C
 
 
 
-Dataset Download: will be open soon. We have submitted our Cchead dataset to Journal, and Cchead will be free downloaded after review. We will also release our trained Fairmot-mifn weights.
+Dataset Download: will be open soon. We have submitted our Cchead dataset to a journal, and Cchead will be open for download after review. 
 
 ## Demo show
 Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2JXYQ?usp=sharing
@@ -35,15 +35,13 @@ Video Demo: https://drive.google.com/drive/folders/1BLmzCRx3MbOzVUITw0-RCpRqTHJ2
 https://cloud.tsinghua.edu.cn/d/a9f2703b83a54dc7b569/
 -->
 
-We have uploaded both raw videos and filefolder of images and labels. If you want to replicate our experiment, you should unzip the 4 zipfiles into <yourpathtopaddledet/dataset/mot/>.
+If you want to replicate our experiment, you should unzip the zipfiles into <yourpathtopaddledet/dataset/mot/>.
 
 
 This filefolder contains what we directly applied in our methods.
 
-It form the dataset as:
+Dataset  directory:
 
-
-    --balanced_data
       --images
          --train
             --90cross_25fps
@@ -87,7 +85,6 @@ where gt.txt is used for evaluation, it is formed as:
       3,1,60,85,28,32,1,1,1
       4,1,63,85,29,31,1,1,1
       5,1,64,85,29,31,1,1,1
-      6,1,66,83,29,31,1,1,1
       ...
       1,2,65,146,50,56,1,1,1 (frame_id, track_id, xy (left&up) wh,...)
 
@@ -109,7 +106,7 @@ imWidth=1920
 imHeight=1080
 imExt=.jpg
 
-If you are using paddledetection, you may modify codes of loading data to train network on this dataset.
+If you are using Paddledetection, you may modify our codes of loading data to train models on this dataset.
 
 ## Environment
 - The code is tested on Ubuntu 20.04.2, python 3.9, cuda 11.7，Paddle 2.4.2, PaddleDet 2.6.
@@ -117,7 +114,7 @@ If you are using paddledetection, you may modify codes of loading data to train 
 
 ## Installation
 
-Please refer to [Installation]((https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.6/docs/tutorials/INSTALL_cn.md) for installation instructions of Paddle and PaddleDet. It is recommanded to install PaddleDet with pip3.
+Please refer to [Installation](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.6/docs/tutorials/INSTALL_cn.md) for installation instructions of Paddle and PaddleDet. It is recommanded to install PaddleDet with pip3.
 
 We modified some codes in PaddleDet, please clone them and replace the original code in PaddleDet.
   

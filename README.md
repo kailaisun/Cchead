@@ -38,10 +38,10 @@ The main directory includes: one annotations file(annotations);  one label file 
 
 
 Utilizing the Full Dataset:
-1.  Make a new filefolder 'cchead'；
-2.  Unzip 'annotations.rar' into 'cchead/annotations' and, then unzip 'labels_with_ids.rar' into  'cchead/labels_with_ids'  ;
-3.  Make new filefolders 'cchead/images/train' and 'cchead/images/test';
-4.  Unzip 'xxx_train.rar' into 'cchead/images/train', Unzip 'xxx_test.rar' into 'cchead/images/test', 'xxx' refers to names of video sequences
+1.  Make a new filefolder 'cchead'
+2.  Unzip 'annotations.rar' into 'cchead/annotations' and, then unzip 'labels_with_ids.rar' into  'cchead/labels_with_ids'  
+3.  Make new filefolders 'cchead/images/train' and 'cchead/images/test'
+4.  Unzip 'xxx_train.rar' into 'cchead/images/train', Unzip 'xxx_test.rar' into 'cchead/images/test', 'xxx' refers to names of video sequences.
 
 Dataset  directory:
 

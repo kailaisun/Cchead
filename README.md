@@ -1,7 +1,7 @@
 # Cchead
 
 
-Code and Dataset for paper: [Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network](https://arxiv.org/abs/2408.05877)
+Code and Dataset for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network,  [Published version (EAAI)](https://authors.elsevier.com/c/1lFRU3OWJ9CU6x) | [Preprint (arXiv)](https://arxiv.org/abs/2408.05877)
 
  <img src="show/show1.jpg" width="100%">
 <img src="show/mifn1.png" width="100%">
@@ -142,6 +142,19 @@ CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_o
 ## Citation
 
 ```
+@article{SUN2025111265,
+         title = {Towards pedestrian head tracking: A benchmark dataset and a multi-source data fusion network},
+         journal = {Engineering Applications of Artificial Intelligence},
+         volume = {158},
+         pages = {111265},
+         year = {2025},
+         issn = {0952-1976},
+         doi = {https://doi.org/10.1016/j.engappai.2025.111265},
+         url = {https://www.sciencedirect.com/science/article/pii/S0952197625012667},
+         author = {Kailai Sun and Xinwei Wang and Shaobo Liu and Qianchuan Zhao and Gao Huang and Chang Liu}
+```
+
+```
 @article{sun2024toward,
          title = {Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network},
          author = {Sun, Kailai and Wang, Xinwei and Liu, Shaobo and Zhao, Qianchuan and Huang, Gao and Liu, Chang},
@@ -149,6 +162,8 @@ CUDA_VISIBLE_DEVICES=1 python tools/eval_mot.py -c configs/mot/fairmot/fairmot_o
          year = {2024}.         
 }
 ```
+
+
 
 ## License
 
@@ -159,6 +174,3 @@ The repository is licensed under the [Apache 2.0 license](LICENSE).
 If you have other questions❓, please contact us in time 👬
 
 
-## Acknowledgement
-
-This work was sponsored by grants from National Science Foundation of China (Grant No. 52172308), Department of Transport of Hubei Province (Contract No. 2022- 11-4-4), National Natural Science Foundation of China under Grant No. 62192751 and the 111 International Collaboration Program of China under Grant No. BP2018006.

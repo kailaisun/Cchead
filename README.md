@@ -1,7 +1,7 @@
 # Cchead
 
 
-Code and Dataset for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network,  [Published version (EAAI)](https://authors.elsevier.com/c/1lFRU3OWJ9CU6x) | [Preprint (arXiv)](https://arxiv.org/abs/2408.05877)
+Code and Dataset for paper: Toward Pedestrian Head Tracking: A Benchmark Dataset and an Information Fusion Network. [Published version (EAAI)](https://authors.elsevier.com/c/1lFRU3OWJ9CU6x) | [Preprint (arXiv)](https://arxiv.org/abs/2408.05877)
 
  <img src="show/show1.jpg" width="100%">
 <img src="show/mifn1.png" width="100%">
